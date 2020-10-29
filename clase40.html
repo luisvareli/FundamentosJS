@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function crearSaludo(finalDeFrase) {
+        return function (nombre) {
+            console.log(`Hola ${nombre} ${finalDeFrase}`)
+        }
+    }
+
+    const saludoTico = crearSaludo('Maeee!')
+    const saludoMexicano = crearSaludo('Gueey!')
+    const saludoArgentino = crearSaludo('Voludo!')
+
+    saludoTico('Luis')
+    saludoMexicano('Luis')
+    saludoArgentino('Luis')
+</script>
+
+</body>
+</html>
